@@ -1,6 +1,6 @@
 #################### CREATE VPC ####################
 
-resource "aws_vpc" "vpc2" {
+resource "aws_vpc" "vpc_2" {
   cidr_block = "${var.VPC_2_CIDR}"
   enable_dns_hostnames = "true"
   enable_dns_support = "true"
@@ -12,8 +12,8 @@ resource "aws_vpc" "vpc2" {
  
 ############# CREATE INTERNET GATEWAY ##############
 
-resource "aws_internet_gateway" "vpc2_igw" {
-  vpc_id = "${aws_vpc.vpc2.id}"
+resource "aws_internet_gateway" "vpc_2_igw" {
+  vpc_id = "${aws_vpc.vpc_2.id}"
  
   tags = {
     Name = "${var.VPC_2_NAME}"

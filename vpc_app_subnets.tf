@@ -1,7 +1,7 @@
 #################### CREATE SUBNETS ####################
 
-resource "aws_subnet" "vpc2_subnet_1" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_1" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_1_CIDR}"
   availability_zone = "${var.AZ_A}"
  
@@ -12,8 +12,8 @@ resource "aws_subnet" "vpc2_subnet_1" {
   }
 }
 
-resource "aws_subnet" "vpc2_subnet_2" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_2" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_2_CIDR}"
   availability_zone = "${var.AZ_B}"
  
@@ -24,8 +24,8 @@ resource "aws_subnet" "vpc2_subnet_2" {
   }
 }
 
-resource "aws_subnet" "vpc2_subnet_3" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_3" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_3_CIDR}"
   availability_zone = "${var.AZ_A}"
  
@@ -36,8 +36,8 @@ resource "aws_subnet" "vpc2_subnet_3" {
   }
 }
 
-resource "aws_subnet" "vpc2_subnet_4" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_4" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_4_CIDR}"
   availability_zone = "${var.AZ_B}"
  
@@ -48,8 +48,8 @@ resource "aws_subnet" "vpc2_subnet_4" {
   }
 }
 
-resource "aws_subnet" "vpc2_subnet_5" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_5" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_5_CIDR}"
   availability_zone = "${var.AZ_A}"
  
@@ -60,8 +60,8 @@ resource "aws_subnet" "vpc2_subnet_5" {
   }
 }
 
-resource "aws_subnet" "vpc2_subnet_6" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_6" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_6_CIDR}"
   availability_zone = "${var.AZ_A}"
  
@@ -72,8 +72,8 @@ resource "aws_subnet" "vpc2_subnet_6" {
   }
 }
 
-resource "aws_subnet" "vpc2_subnet_7" {
-  vpc_id     = "${aws_vpc.vpc2.id}"
+resource "aws_subnet" "vpc_2_subnet_7" {
+  vpc_id     = "${aws_vpc.vpc_2.id}"
   cidr_block = "${var.VPC_2_SUBNET_7_CIDR}"
   availability_zone = "${var.AZ_B}"
  
