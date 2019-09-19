@@ -15,7 +15,7 @@ resource "aws_subnet" "vpc2_subnet_1" {
 resource "aws_subnet" "vpc2_subnet_2" {
   vpc_id     = "${aws_vpc.vpc2.id}"
   cidr_block = "${var.VPC_2_SUBNET_2_CIDR}"
-  availability_zone = "${var.AZ_A}"
+  availability_zone = "${var.AZ_B}"
  
   map_public_ip_on_launch = "${var.VPC_2_SUBNET_2_PUBLIC}"
  
@@ -39,7 +39,7 @@ resource "aws_subnet" "vpc2_subnet_3" {
 resource "aws_subnet" "vpc2_subnet_4" {
   vpc_id     = "${aws_vpc.vpc2.id}"
   cidr_block = "${var.VPC_2_SUBNET_4_CIDR}"
-  availability_zone = "${var.AZ_A}"
+  availability_zone = "${var.AZ_B}"
  
   map_public_ip_on_launch = "${var.VPC_2_SUBNET_4_PUBLIC}"
  
@@ -75,7 +75,7 @@ resource "aws_subnet" "vpc2_subnet_6" {
 resource "aws_subnet" "vpc2_subnet_7" {
   vpc_id     = "${aws_vpc.vpc2.id}"
   cidr_block = "${var.VPC_2_SUBNET_7_CIDR}"
-  availability_zone = "${var.AZ_A}"
+  availability_zone = "${var.AZ_B}"
  
   map_public_ip_on_launch = "${var.VPC_2_SUBNET_7_PUBLIC}"
  

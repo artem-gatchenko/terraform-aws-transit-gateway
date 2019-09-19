@@ -10,9 +10,9 @@ resource "aws_vpc" "vpc2" {
   }
 }
  
-################## CREATE GATEWAY ##################
+############# CREATE INTERNET GATEWAY ##############
 
-resource "aws_internet_gateway" "vpc2" {
+resource "aws_internet_gateway" "vpc2_igw" {
   vpc_id = "${aws_vpc.vpc2.id}"
  
   tags = {
