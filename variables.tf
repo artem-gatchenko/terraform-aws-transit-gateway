@@ -1,15 +1,15 @@
 ######################## GENERAL #########################
 
 variable "REGION" {
-  default = "eu-west-1"
+  default = "eu-west-2"
 }
 
 variable "AZ_A" {
-  default = "eu-west-1a"
+  default = "eu-west-2a"
 }
 
 variable "AZ_B" {
-  default = "eu-west-1b"
+  default = "eu-west-2b"
 }
 
 #################### FIRST VPC - MGMT ####################
@@ -117,7 +117,7 @@ variable "VPC_2_SUBNET_5_PUBLIC" {
 ### Subnet LB; AZ - A
 
 variable "VPC_2_SUBNET_6_NAME" { 
-  default = "APP DB A"
+  default = "APP LB A"
 }
 
 variable "VPC_2_SUBNET_6_CIDR" { 
@@ -131,7 +131,7 @@ variable "VPC_2_SUBNET_6_PUBLIC" {
 ### Subnet LB; AZ - B
 
 variable "VPC_2_SUBNET_7_NAME" { 
-  default = "APP DB B"
+  default = "APP LB B"
 }
 
 variable "VPC_2_SUBNET_7_CIDR" { 
